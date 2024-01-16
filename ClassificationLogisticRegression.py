@@ -26,17 +26,3 @@ ax.scatter(y4,X_test[y_test == False],c='red', marker='x')
 ax.plot(x,y)
 plt.show()
 
-# Create a histogram to estimate the probability density function
-count, bins, ignored = plt.hist(y2, 30, density=True)
-
-# Plot the probability density function using a normal distribution
-pdf = norm.pdf(y2, mu, sigma)
-plt.plot(bins, pdf, color='red', linewidth=2, label='PDF')
-
-# Add labels and a legend
-plt.xlabel('Value')
-plt.ylabel('Probability Density')
-plt.legend()
-
-# Show the plot
-plt.show()
