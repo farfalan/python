@@ -14,7 +14,6 @@ for i in range(0,math.floor(math.log2(inputt)),1):
     print(f"node: {i} value  = {math.floor(inputt/2**i)}")
 
 sum =sum +1
-print(f"input = {inputt}")
 print(f"sum = {sum}")
 
 
